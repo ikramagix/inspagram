@@ -87,5 +87,13 @@
   .photo-button:hover {
     text-decoration: underline;
   }
+
+  body {
+    background-image: url('../../public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
   /* PhotoGallery.css */
   
