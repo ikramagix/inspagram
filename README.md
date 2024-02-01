@@ -65,8 +65,12 @@ Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration,
 
 ## Auteur
 
-[Ikrame Saadi](https://github.com/ikramagic/) <!-- Remplacez par votre nom et le lien vers votre profil GitHub -->
+[Ikrame Saadi](https://github.com/ikramagic/)
 
 ## Licence
 
 Ce projet est sous licence [MIT](LICENSE.md).
+
+## Statut 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/ikstagram/deploys)
