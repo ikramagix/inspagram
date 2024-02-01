@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import unsplash from '../api/unsplash';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JavaScript
-import './PhotoGallery.css'; // Import your custom CSS file (PhotoGallery.css)
+import './../components/PhotoGallery.css'; // Import your custom CSS file (PhotoGallery.css)
 
 const PhotoGallery = () => {
   const [photos, setPhotos] = useState([]);
