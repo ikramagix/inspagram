@@ -7,10 +7,15 @@
 ## Fonctionnalités
 
 - **Affichage d'images aléatoires :** L'application récupère des images aléatoires à partir de l'API Unsplash et les affiche sous forme de grille, similaire à Instagram.
-- **Rechargement d'Images :** Les utilisateurs peuvent recharger les images à tout moment en cliquant sur le bouton "magic?".
+- **Rechargement d'images :** Les utilisateurs peuvent recharger les images à tout moment en cliquant sur le bouton "magic?".
+
+![Unsplash image from Simeon Galabov](./public/simeon-galabov-WMQKzEJXXLw-unsplash.jpg) 
+
 - **Mise en Page Réactive :** La mise en page est réactive et s'adapte automatiquement à la taille de l'écran de l'utilisateur grâce à Bootstrap.
 
-## Structure du Projet
+![Unsplash image from Simeon Galabov](./public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg) 
+
+## Structure du projet
 
 - **`src/App.js` :** C'est le composant principal de l'application où tout commence. Il affiche le titre, le nom d'utilisateur et le composant `PhotoGallery`.
 - **`src/components/PhotoGallery.js` :** C'est le cœur de l'application. Il utilise l'API Unsplash pour charger et afficher les images aléatoires dans un carrousel.
@@ -19,11 +24,11 @@
 
 ## Configuration du projet
 
-1. **Clonage du Projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagic/ikstagram.git`.
+1. **Clonage du projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagic/ikstagram.git`.
 
 2. **Installation des dépendances :** Installez les dépendances en utilisant `npm install`.
 
-3. **Obtention de la Clé d'API Unsplash :** Pour utiliser l'API Unsplash, vous devez créer un compte développeur sur [Unsplash Developer](https://unsplash.com/developers) et obtenir une clé d'API.
+3. **Obtention de la clé API Unsplash :** Pour utiliser l'API Unsplash, vous devez créer un compte développeur sur [Unsplash Developer](https://unsplash.com/developers) et obtenir une clé API.
 
 4. **Configuration de la clé API :** Créez un fichier `.env` à la racine du projet et ajoutez votre clé d'API comme suit :
 
@@ -31,18 +36,20 @@
 REACT_APP_UNSPLASH_API_KEY=VOTRE_CLÉ_API_UNSPLASH_ICI
 ```
 
-5. **Démarrage de l'Application :** Démarrez l'application avec `npm start`. Vous pouvez maintenant visualiser l'application dans votre navigateur en ouvrant [http://localhost:3000](http://localhost:3000).
+5. **Démarrage de l'application :** Démarrez l'application avec `npm start`. Vous pouvez maintenant visualiser l'application dans votre navigateur en ouvrant [votre serveur local](http://localhost:3000).
+
+Vous pouvez aussi consulter l'app en lgne ici : [🌍](https://ikstagram.netlify.app/).
 
 ## Personnalisation
 
-L'application Ikstagram est un point de départ pour explorer davantage l'utilisation de l'API Unsplash et de React. Voici quelques idées pour personnaliser davantage l'application :
+L'application @ikstagram est un point de départ pour explorer davantage l'utilisation de l'API Unsplash et de React. Voici quelques idées pour personnaliser davantage l'application :
 
-- **Recherche d'Images :** Ajoutez une fonction de recherche pour permettre aux utilisateurs de rechercher des images spécifiques par mots-clés.
-- **Affichage d'Utilisateur :** Intégrez l'API Unsplash Users pour afficher les détails de l'utilisateur associé à chaque image.
+- **Recherche d'images :** Ajoutez une fonction de recherche pour permettre aux utilisateurs de rechercher des images spécifiques par mots-clés.
+- **Affichage d'utilisateurs :** Intégrez l'API Unsplash Users pour afficher les détails de l'utilisateur associé à chaque image.
 - **Pagination :** Mettez en place une pagination pour afficher plus d'images à la fois.
-- **Styles Personnalisés :** Personnalisez le style de l'application en modifiant le fichier CSS `PhotoGallery.css`.
+- **Styles personnalisés :** Personnalisez le style de l'application en modifiant le fichier CSS `PhotoGallery.css`.
 
-## Explication du Code
+## Explication du code
 
 Le code source de l'application est bien commenté pour faciliter la compréhension. Voici quelques points clés à noter :
 
@@ -57,7 +64,7 @@ Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration,
 
 ## Auteur
 
-[Ajoutez Votre Nom](votre-lien-de-profil-github) <!-- Remplacez par votre nom et le lien vers votre profil GitHub -->
+[Ikrame Saadi](https://github.com/ikramagic/) <!-- Remplacez par votre nom et le lien vers votre profil GitHub -->
 
 ## Licence
 
