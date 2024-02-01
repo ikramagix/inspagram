@@ -1,9 +1,6 @@
 # @ikstagram - Utilisation de l'API Unsplash avec JavaScript & React 🔬
 
-
-![@ikstagram Logo](./public/favicon.ico) 
-
-[@ikstagram ](https://ikstagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
+[@ikstagram](https://ikstagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
 ![Unsplash image from Simeon Galabov](./public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg) 
 
@@ -73,4 +70,8 @@ Ce projet est sous licence [MIT](LICENSE.md).
 
 ## Statut 
 
+![@ikstagram Logo](./public/favicon.ico) 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/ikstagram/deploys)
+
+Comme quoi.
