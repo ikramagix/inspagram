@@ -8,7 +8,11 @@ const PhotoGallery = () => {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    unsplash.photos.list({ page: 1, perPage: 10 })
+    loadPhotos(); // Load photos initially
+  }, []);
+
+  const loadPhotos = () => {
+    unsplash.photos.list({ page: 1, perPage: 20 }) // Limit to 5 images per page load
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -16,54 +20,60 @@ const PhotoGallery = () => {
           setPhotos(result.response.results);
         }
       });
-  }, []);
-
-  // Function to generate a random number between min and max
-  const getRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
-  // Shuffle photos randomly
-  const shufflePhotos = (photosArray) => {
-    for (let i = photosArray.length - 1; i > 0; i--) {
-      const j = getRandomNumber(0, i);
-      [photosArray[i], photosArray[j]] = [photosArray[j], photosArray[i]];
-    }
-    return photosArray;
+  const handleReloadClick = () => {
+    loadRandomPhotos(); // Load new random photos on button click
   };
+  
+  const loadRandomPhotos = () => {
+    const page = Math.floor(Math.random() * 10) + 1; // Generate a random page number (between 1 and 10)
+    unsplash.photos.list({ page, perPage: 5 }) // Limit to 5 images per page load
+      .then(result => {
+        if (result.errors) {
+          console.log('error occurred: ', result.errors[0]);
+        } else {
+          setPhotos(result.response.results);
+        }
+      });
+  };  
 
   return (
     <div className="container">
-      <div className="row row-cols-1 row-cols-md-3 g-4"> {/* Bootstrap grid */}
-        <div className="col-12 mb-4">
-          <h1>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Unsplash_wordmark_logo.svg" alt="Unsplash Logo" width="50" height="50" />
-            powered by © unsplash
-          </h1>
-        </div>
-        {shufflePhotos(photos).map(photo => (
-          <div key={photo.id} className="col">
-            <div className="custom-card">
-              <img src={photo.urls.small} alt={photo.alt_description} className="custom-card-image" />
-              <div className="custom-overlay"></div>
-              <div className="custom-card-body">
-                <h5 className="custom-card-title">{photo.user.name}</h5>
-                <p className="custom-card-text">{photo.description}</p>
-                <div className="custom-card-buttons">
-                  <a href={photo.user.links.html} target="_blank" rel="noopener noreferrer" className="btn btn-info custom-btn">
-                    Voir le profil du photographe
-                  </a>
-                  <a href={photo.links.html} target="_blank" rel="noopener noreferrer" className="btn btn-warning custom-btn">
-                    Voir l'image sur unsplash.com
-                  </a>
-                </div>
+      {/* Instagram-like Grid */}
+      <div className="photo-grid">
+        {photos.map((photo, index) => (
+          <div key={photo.id} className="photo-card">
+            <img src={photo.urls.small} alt={photo.alt_description} className="photo-image" />
+            <div className="photo-overlay"></div>
+            <div className="photo-details">
+              <div className="photo-title">{photo.user.name}</div>
+              <div className="photo-description">{photo.description}</div>
+              <div className="photo-buttons">
+                <a href={photo.user.links.html} target="_blank" rel="noopener noreferrer" className="photo-button">
+                  le_photographe.unsplash? 👨🏻‍✈️
+                </a>
+                <a href={photo.links.html} target="_blank" rel="noopener noreferrer" className="photo-button">
+                  l'image_sur_unsplash.com? 🚁
+                </a>
               </div>
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Reload button */}
+      <div className="text-center mt-4">
+        <button
+          className="btn btn-danger"
+          onClick={handleReloadClick}
+        >
+          magic?<i className="fa-solid fa-wand-magic-sparkles"></i>
+        </button>
       </div>
     </div>
   );
 };
 
 export default PhotoGallery;
+

@@ -1,70 +1,91 @@
 /* PhotoGallery.css */
-
-.custom-card {
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .photo-card {
     position: relative;
     background-color: #fff;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    overflow: hidden;
+    cursor: pointer;
   }
   
-  .custom-card:hover {
+  .photo-card:hover {
     transform: scale(1.05);
   }
   
-  .custom-card-image {
+  .photo-image {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
   }
   
-  .custom-overlay {
+  .photo-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.2s;
   }
   
-  .custom-card-body {
-    padding: 1rem;
-    position: absolute; /* Position the body above the overlay */
-    top: 0;
+  .photo-card:hover .photo-overlay {
+    opacity: 1;
+  }
+  
+  .photo-details {
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
-  }
-  
-  .custom-card-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #000; /* Text color in black */
-  }
-  
-  .custom-card-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: bold; /* Text in bold */
-    color: #000; /* Text color in black */
-  }
-  
-  .custom-card-buttons {
-    margin-top: 1rem;
-  }
-  
-  .custom-btn {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin-right: 0.5rem;
-    color: #000; /* Text color in black */
-    font-weight: bold; /* Text in bold */
-  }
-  
-  /* Center card title */
-  .custom-card-title {
+    padding: 1rem;
     text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(100%);
+    transition: transform 0.2s;
   }
+  
+  .photo-card:hover .photo-details {
+    transform: translateY(0);
+  }
+  
+  .photo-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .photo-description {
+    font-size: 14px;
+  }
+  
+  .photo-buttons {
+    margin-top: 8px;
+  }
+  
+  .photo-button {
+    font-size: 14px;
+    margin-right: 8px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .photo-button:hover {
+    text-decoration: underline;
+  }
+  /* PhotoGallery.css */
   
