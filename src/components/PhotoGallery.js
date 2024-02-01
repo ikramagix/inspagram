@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import unsplash from '../api/unsplash';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JavaScript
-import './../components/PhotoGallery.css'; // Import your custom CSS file (PhotoGallery.css)
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import './../components/PhotoGallery.css'; 
 
 const PhotoGallery = () => {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    loadPhotos(); // Load photos initially
+    loadPhotos(); 
   }, []);
 
   const loadPhotos = () => {
-    unsplash.photos.list({ page: 1, perPage: 20 }) // Limit to 5 images per page load
+    unsplash.photos.list({ page: 1, perPage: 15 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -23,12 +23,12 @@ const PhotoGallery = () => {
   };
 
   const handleReloadClick = () => {
-    loadRandomPhotos(); // Load new random photos on button click
+    loadRandomPhotos(); /
   };
   
   const loadRandomPhotos = () => {
-    const page = Math.floor(Math.random() * 10) + 1; // Generate a random page number (between 1 and 10)
-    unsplash.photos.list({ page, perPage: 5 }) // Limit to 5 images per page load
+    const page = Math.floor(Math.random() * 10) + 1; 
+    unsplash.photos.list({ page, perPage: 3 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
