@@ -5,6 +5,8 @@
 
 [@ikstagram ](https://ikstagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
+![Unsplash image from Simeon Galabov](./public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg) 
+
 ## Fonctionnalités
 
 - **Affichage d'images aléatoires :** L'application récupère des images aléatoires à partir de l'API Unsplash et les affiche sous forme de grille, similaire à Instagram.
@@ -13,8 +15,6 @@
 ![Unsplash image from Simeon Galabov](./public/simeon-galabov-WMQKzEJXXLw-unsplash.jpg) 
 
 - **Mise en Page Réactive :** La mise en page est réactive et s'adapte automatiquement à la taille de l'écran de l'utilisateur grâce à Bootstrap.
-
-![Unsplash image from Simeon Galabov](./public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg) 
 
 ## Structure du projet
 
