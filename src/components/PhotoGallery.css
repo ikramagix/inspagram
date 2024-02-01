@@ -60,7 +60,8 @@
   }
   
   .photo-card:hover .photo-details {
-    transform: translateY(0);
+display:flex;
+    transform: translateY(1);
   }
   
   .photo-title {
@@ -89,7 +90,7 @@
   }
 
   body {
-    background-image: url('../../public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg');
+    background-image: url('../../public/philip-oroni-xKXjCNZlM8k-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
