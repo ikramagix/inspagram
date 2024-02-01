@@ -1,0 +1,67 @@
+/* src/components/PhotoGallery.css */
+.photo-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-card img {
+  transition: transform 0.5s ease;
+}
+
+.photo-card:hover img {
+  transform: scale(1.1);
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.photo-card:hover .photo-overlay {
+  height: 100%;
+}
+
+.photo-title {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* src/components/PhotoGallery.css */
+.my-gallery-class {
+  margin: 0 auto;
+}
+.my-gallery-class .image-element {
+  width: 33%; /* Ajuste cela selon la largeur souhaitée pour chaque colonne */
+  padding: 5px;
+  position: relative;
+}
+.my-gallery-class img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+/* Dans PhotoGallery.css */
+.image-element:hover {
+  transform: scale(1.05);
+  transition: transform .3s ease;
+}
