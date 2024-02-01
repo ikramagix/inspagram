@@ -14,7 +14,7 @@
 
 ![Unsplash image from Simeon Galabov](./public/simeon-galabov-WMQKzEJXXLw-unsplash.jpg) 
 
-- **Mise en Page Réactive :** La mise en page est réactive et s'adapte automatiquement à la taille de l'écran de l'utilisateur grâce à Bootstrap.
+- **Mise en page responsive :** La mise en page est responsive et s'adapte automatiquement à la taille de l'écran de l'utilisateur grâce à Bootstrap.
 
 ## Structure du projet
 
