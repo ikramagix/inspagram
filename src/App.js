@@ -5,8 +5,8 @@ import PhotoGallery from './components/PhotoGallery';
 function App() {
   return (
     <div className="App">
-      <h1 style={{ fontFamily: "'Sixtyfour', sans-serif" }}>ikstagram :</h1>
-      <h2>@ⵜⴰⵢⵔⵉ</h2>
+      <h1 style={{ fontFamily: "'Sixtyfour', sans-serif" }}>ikstagram</h1>
+      <h2 style={{ fontFamily: "'Sixtyfour', sans-serif" }}>@aie_aie_art</h2>
       <PhotoGallery />
     </div>
   );
