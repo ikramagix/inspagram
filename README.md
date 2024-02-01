@@ -75,3 +75,5 @@ Ce projet est sous licence [MIT](LICENSE.md).
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/ikstagram/deploys)
 
 Comme quoi.
+
+![Unsplash image from Philip Oroni](./public/philip-oroni-xKXjCNZlM8k-unsplash.jpg) 
