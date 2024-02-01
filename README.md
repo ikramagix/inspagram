@@ -1,12 +1,12 @@
 # Ikstagram - Utilisation de l'API Unsplash avec JavaScript et React
 
-![Ikstagram Logo](insert_logo_url_here) <!-- Ajoutez l'URL du logo de votre projet ici -->
+![ikstagram Logo](./public/favicon.ico) 
 
-Ikstagram est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
+@ikstagram est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
 ## Fonctionnalités
 
-- **Affichage d'Images Aléatoires :** L'application récupère des images aléatoires à partir de l'API Unsplash et les affiche sous forme de grille, similaire à Instagram.
+- **Affichage d'images aléatoires :** L'application récupère des images aléatoires à partir de l'API Unsplash et les affiche sous forme de grille, similaire à Instagram.
 - **Rechargement d'Images :** Les utilisateurs peuvent recharger les images à tout moment en cliquant sur le bouton "magic?".
 - **Mise en Page Réactive :** La mise en page est réactive et s'adapte automatiquement à la taille de l'écran de l'utilisateur grâce à Bootstrap.
 
@@ -21,11 +21,11 @@ Ikstagram est une application web simple qui imite le style d'Instagram en affic
 
 1. **Clonage du Projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagic/ikstagram.git`.
 
-2. **Installation des Dépendances :** Installez les dépendances en utilisant `npm install`.
+2. **Installation des dépendances :** Installez les dépendances en utilisant `npm install`.
 
 3. **Obtention de la Clé d'API Unsplash :** Pour utiliser l'API Unsplash, vous devez créer un compte développeur sur [Unsplash Developer](https://unsplash.com/developers) et obtenir une clé d'API.
 
-4. **Configuration de la Clé d'API :** Créez un fichier `.env` à la racine du projet et ajoutez votre clé d'API comme suit :
+4. **Configuration de la clé API :** Créez un fichier `.env` à la racine du projet et ajoutez votre clé d'API comme suit :
 
 ```ruby
 REACT_APP_UNSPLASH_API_KEY=VOTRE_CLÉ_API_UNSPLASH_ICI
