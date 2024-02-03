@@ -1,4 +1,4 @@
-# @ikstagram - Utilisation de l'API Unsplash avec JavaScript & React 🔬
+# @ikstagram - Utiliser l'API Unsplash avec JavaScript & React 🔬
 
 [@ikstagram](https://ikstagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
