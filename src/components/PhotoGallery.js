@@ -23,7 +23,7 @@ const PhotoGallery = () => {
   };
 
   const handleReloadClick = () => {
-    loadRandomPhotos(); /
+    loadRandomPhotos(); 
   };
   
   const loadRandomPhotos = () => {

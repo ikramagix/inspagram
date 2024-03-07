@@ -88,13 +88,5 @@ display:flex;
   .photo-button:hover {
     text-decoration: underline;
   }
-
-  body {
-    background-image: url('../../public/philip-oroni-xKXjCNZlM8k-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
   
   /* PhotoGallery.css */
-  
