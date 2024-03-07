@@ -7,7 +7,9 @@
 - **Affichage d'images aléatoires :** L'application récupère des images aléatoires à partir de l'API Unsplash et les affiche sous forme de grille, similaire à Instagram.
 - **Rechargement d'images :** Les utilisateurs peuvent recharger les images à tout moment en cliquant sur le bouton "magic?".
 
-![Unsplash image from Simeon Galabov](./public/simeon-galabov-WMQKzEJXXLw-unsplash.jpg) 
+<a href="https://inspagram.netlify.app/" target="_blank" rel="noopener noreferrer">
+  <img src="./public/simeon-galabov-WMQKzEJXXLw-unsplash.jpg" alt="Unsplash image from Simeon Galabov">
+</a>
 
 - **Mise en page responsive :** La mise en page est responsive et s'adapte automatiquement à la taille de l'écran de l'utilisateur grâce à Bootstrap.
 
