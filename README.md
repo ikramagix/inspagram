@@ -1,6 +1,6 @@
-# ikstagram - Utilisation de l'API Unsplash avec JavaScript & React 🔬
+# @inspagram - Utiliser l'API Unsplash avec JavaScript & React 🔬
 
-[@ikstagram](https://ikstagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
+[@inspagram](https://inspagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
 ![Unsplash image from Simeon Galabov](./public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg) 
 
@@ -22,7 +22,7 @@
 
 ## Configuration du projet
 
-1. **Clonage du projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagic/ikstagram.git`.
+1. **Clonage du projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagic/inspagram.git`.
 
 2. **Installation des dépendances :** Installez les dépendances en utilisant `npm install`.
 
@@ -36,11 +36,11 @@ REACT_APP_UNSPLASH_API_KEY=VOTRE_CLÉ_API_UNSPLASH_ICI
 
 5. **Démarrage de l'application :** Démarrez l'application avec `npm start`. Vous pouvez maintenant visualiser l'application dans votre navigateur en ouvrant [votre serveur local](http://localhost:3000).
 
-Vous pouvez aussi consulter l'app en lgne ici : [🌍](https://ikstagram.netlify.app/).
+Vous pouvez aussi consulter l'app en lgne ici : [🌍](https://inspagram.netlify.app/).
 
 ## Personnalisation
 
-L'application @ikstagram est un point de départ pour explorer davantage l'utilisation de l'API Unsplash et de React. Voici quelques idées pour personnaliser davantage l'application :
+L'application @inspagram est un point de départ pour explorer davantage l'utilisation de l'API Unsplash et de React. Voici quelques idées pour personnaliser davantage l'application :
 
 - **Recherche d'images :** Ajoutez une fonction de recherche pour permettre aux utilisateurs de rechercher des images spécifiques par mots-clés.
 - **Affichage d'utilisateurs :** Intégrez l'API Unsplash Users pour afficher les détails de l'utilisateur associé à chaque image.
@@ -70,9 +70,9 @@ Ce projet est sous licence [MIT](LICENSE.md).
 
 ## Statut 
 
-![@ikstagram Logo](./public/favicon.ico) 
+![@inspagram Logo](./public/favicon.ico) 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/ikstagram/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/inspagram/deploys)
 
 Comme quoi.
 
