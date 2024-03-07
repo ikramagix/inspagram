@@ -12,7 +12,7 @@ const PhotoGallery = () => {
   }, []);
 
   const loadPhotos = () => {
-    unsplash.photos.list({ page: 1, perPage: 6 }) 
+    unsplash.photos.list({ page: 1, perPage: 15 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -28,7 +28,7 @@ const PhotoGallery = () => {
   
   const loadRandomPhotos = () => {
     const page = Math.floor(Math.random() * 10) + 1; 
-    unsplash.photos.list({ page, perPage: 6 }) 
+    unsplash.photos.list({ page, perPage: 5 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -40,7 +40,6 @@ const PhotoGallery = () => {
 
   return (
     <div className="container">
-      {/* Instagram-like Grid */}
       <div className="photo-grid">
         {photos.map((photo) => (
           <div key={photo.id} className="photo-card">
