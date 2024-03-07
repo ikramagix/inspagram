@@ -12,7 +12,7 @@ const PhotoGallery = () => {
   }, []);
 
   const loadPhotos = () => {
-    unsplash.photos.list({ page: 1, perPage: 15 }) 
+    unsplash.photos.list({ page: 1, perPage: 6 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -28,7 +28,7 @@ const PhotoGallery = () => {
   
   const loadRandomPhotos = () => {
     const page = Math.floor(Math.random() * 10) + 1; 
-    unsplash.photos.list({ page, perPage: 3 }) 
+    unsplash.photos.list({ page, perPage: 6 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -42,7 +42,7 @@ const PhotoGallery = () => {
     <div className="container">
       {/* Instagram-like Grid */}
       <div className="photo-grid">
-        {photos.map((photo, index) => (
+        {photos.map((photo) => (
           <div key={photo.id} className="photo-card">
             <img src={photo.urls.small} alt={photo.alt_description} className="photo-image" />
             <div className="photo-overlay"></div>
@@ -65,10 +65,10 @@ const PhotoGallery = () => {
       {/* Reload button */}
       <div className="text-center mt-4">
         <button
-          className="btn btn-danger"
+          className="btn"
           onClick={handleReloadClick}
         >
-          magic?<i className="fa-solid fa-wand-magic-sparkles"></i>
+          magic... ? <i className="fa-solid fa-wand-magic-sparkles"></i>
         </button>
       </div>
     </div>

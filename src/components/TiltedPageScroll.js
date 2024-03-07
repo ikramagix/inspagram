@@ -12,7 +12,7 @@ const TiltedPageScroll = () => {
   const loadPhotos = async () => {
     try {
       const response = await unsplash.photos.getRandom({
-        count: 10,
+        count: 6,
       });
       setPhotos(response.data); 
     } catch (error) {

@@ -8,10 +8,10 @@ import "buffer";
 function App() {
   return (
     <div className="App">
-      <h1 style={{ fontFamily: "'Sixtyfour', sans-serif" }} className="fluorescent-text">inspagram.clone</h1>
-      <h2 style={{ fontFamily: "'Sixtyfour', sans-serif" }} className="fluorescent-text">random is beautiful | get inspired</h2>
-      <PhotoGallery />
+      <h1 style={{ fontFamily: "'Sixtyfour', sans-serif" }} className="fluorescent-text">inspagram's manifest</h1>
+      <h2 style={{ fontFamily: "'Madimi One', sans-serif" }} className="fluorescent-text">random is beautiful | discover artists | explore your imagination | find inspiration</h2>
       <TiltedPageScroll />
+      <PhotoGallery />
     </div>
   );
 }
