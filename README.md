@@ -2,8 +2,6 @@
 
 [@inspagram](https://inspagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
-![Unsplash image from Simeon Galabov](./public/nasa-hubble-space-telescope-iD9l6eMz5_Q-unsplash.jpg) 
-
 ## Fonctionnalités
 
 - **Affichage d'images aléatoires :** L'application récupère des images aléatoires à partir de l'API Unsplash et les affiche sous forme de grille, similaire à Instagram.
@@ -40,12 +38,11 @@ Vous pouvez aussi consulter l'app en lgne ici : [🌍](https://inspagram.netlify
 
 ## Personnalisation
 
-L'application @inspagram est un point de départ pour explorer davantage l'utilisation de l'API Unsplash et de React. Voici quelques idées pour personnaliser davantage l'application :
+L'application @inspagram est un point de départ pour explorer davantage l'utilisation de l'API Unsplash et de React. Voici quelques idées pour enrichir l'application :
 
 - **Recherche d'images :** Ajoutez une fonction de recherche pour permettre aux utilisateurs de rechercher des images spécifiques par mots-clés.
 - **Affichage d'utilisateurs :** Intégrez l'API Unsplash Users pour afficher les détails de l'utilisateur associé à chaque image.
 - **Pagination :** Mettez en place une pagination pour afficher plus d'images à la fois.
-- **Styles personnalisés :** Personnalisez le style de l'application en modifiant le fichier CSS `PhotoGallery.css`.
 
 ## Explication du code
 
@@ -73,7 +70,3 @@ Ce projet est sous licence [MIT](LICENSE.md).
 ![@inspagram Logo](./public/favicon.ico) 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/inspagram/deploys)
-
-Comme quoi.
-
-![Unsplash image from Philip Oroni](./public/philip-oroni-xKXjCNZlM8k-unsplash.jpg) 
