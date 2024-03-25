@@ -1,4 +1,74 @@
-# @inspagram - Utiliser l'API Unsplash avec JavaScript & React 🔬
+# 🇬🇧 @inspagram - Using the Unsplash API with JavaScript & React 🔬
+
+[@inspagram](https://inspagram.netlify.app/) is a simple web application that mimics the style of Instagram by displaying random images from the Unsplash API. This project was created to explore integrating the Unsplash API with JavaScript and React, and it can serve as a foundation for developing more advanced features.
+
+## Features
+
+- **Random Image Display:** The application fetches random images from the Unsplash API and displays them in a grid format, similar to Instagram.
+- **Image Reload:** Users can reload images at any time by clicking on the "magic?" button.
+- **Responsive Layout:** The layout is responsive and automatically adjusts to the user's screen size thanks to Bootstrap.
+
+## Project Structure
+
+- **`src/App.js`:** This is the main component of the application where everything starts. It displays the title, username, and the `PhotoGallery` component.
+- **`src/components/PhotoGallery.js`:** This is the heart of the application. It uses the Unsplash API to load and display random images in a carousel.
+- **`src/api/unsplash.js`:** A utility file that contains the Unsplash API configuration and functions for making requests.
+- **`src/PhotoGallery.css`:** The custom CSS file that defines the style of the photo gallery.
+
+## Project Setup
+
+1. **Project Cloning:** Clone this repository to your local machine using the command `git clone https://github.com/ikramagic/inspagram.git`.
+
+2. **Dependency Installation:** Install the dependencies using `npm install`.
+
+3. **Obtaining the Unsplash API Key:** To use the Unsplash API, you must create a developer account on [Unsplash Developer](https://unsplash.com/developers) and obtain an API key.
+
+4. **API Key Configuration:** Create a `.env` file at the root of the project and add your API key as follows:
+
+```bash
+REACT_APP_UNSPLASH_API_KEY=YOUR_UNSPLASH_API_KEY_HERE
+```
+
+5. **Starting the Application:** Start the application with `npm start`. You can now view the application in your browser by opening [your local server](http://localhost:3000).
+
+You can also check out the app online here: [🌍](https://inspagram.netlify.app/).
+
+## Customization
+
+The @inspagram application is a starting point for further exploring the use of the Unsplash API and React. Here are some ideas to enrich the application:
+
+- **Image Search:** Add a search function to allow users to search for specific images by keywords.
+- **Displaying Users:** Integrate the Unsplash Users API to display details of the user associated with each image.
+- **Pagination:** Implement pagination to display more images at once.
+
+## Code Explanation
+
+The application's source code is well-commented to facilitate understanding. Here are some key points to note:
+
+- The use of React Hooks, namely `useState` and `useEffect`, to manage the application's state.
+- The integration of the Unsplash API using HTTP requests to fetch random images.
+- Responsive layout thanks to Bootstrap and custom CSS classes defined in `PhotoGallery.css`.
+- The use of a carousel component to display images in an interactive manner.
+
+## Contribution
+
+Contributions are welcome! If you have ideas for improvements, new features, or fixes to this project, feel free to submit pull requests.
+
+## Author
+
+[Ikrame Saadi](https://github.com/ikramagic/)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
+
+## Status
+
+![@inspagram Logo](./public/favicon.ico) 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/inspagram/deploys)
+
+# 🇫🇷 @inspagram - Utiliser l'API Unsplash avec JavaScript & React 🔬
 
 [@inspagram](https://inspagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
