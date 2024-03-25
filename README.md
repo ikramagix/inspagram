@@ -11,7 +11,7 @@
 ## Project Structure
 
 - **`src/App.js`:** This is the main component of the application where everything starts. It displays the title, username, and the `PhotoGallery` component.
-- **`src/components/PhotoGallery.js`:** This is the heart of the application. It uses the Unsplash API to load and display random images in a carousel.
+- **`src/components/PhotoGallery.jsx`:** This is the heart of the application. It uses the Unsplash API to load and display random images in a grid.
 - **`src/api/unsplash.js`:** A utility file that contains the Unsplash API configuration and functions for making requests.
 - **`src/PhotoGallery.css`:** The custom CSS file that defines the style of the photo gallery.
 
@@ -41,20 +41,11 @@ The @inspagram application is a starting point for further exploring the use of 
 - **Displaying Users:** Integrate the Unsplash Users API to display details of the user associated with each image.
 - **Pagination:** Implement pagination to display more images at once.
 
-## Code Explanation
-
-The application's source code is well-commented to facilitate understanding. Here are some key points to note:
-
-- The use of React Hooks, namely `useState` and `useEffect`, to manage the application's state.
-- The integration of the Unsplash API using HTTP requests to fetch random images.
-- Responsive layout thanks to Bootstrap and custom CSS classes defined in `PhotoGallery.css`.
-- The use of a carousel component to display images in an interactive manner.
-
 ## Contribution
 
 Contributions are welcome! If you have ideas for improvements, new features, or fixes to this project, feel free to submit pull requests.
 
-## Author
+## Who did this ?
 
 [Ikrame Saadi](https://github.com/ikramagic/)
 
@@ -81,7 +72,7 @@ This project is licensed under the [MIT License](LICENSE.md).
 ## Structure du projet
 
 - **`src/App.js` :** C'est le composant principal de l'application où tout commence. Il affiche le titre, le nom d'utilisateur et le composant `PhotoGallery`.
-- **`src/components/PhotoGallery.js` :** C'est le cœur de l'application. Il utilise l'API Unsplash pour charger et afficher les images aléatoires dans un carrousel.
+- **`src/components/PhotoGallery.jsx` :** C'est le cœur de l'application. Il utilise l'API Unsplash pour charger et afficher les images aléatoires dans une grille.
 - **`src/api/unsplash.js` :** Un fichier utilitaire qui contient la configuration de l'API Unsplash et des fonctions pour effectuer des requêtes.
 - **`src/PhotoGallery.css` :** Le fichier CSS personnalisé qui définit le style de la galerie de photos.
 
@@ -111,22 +102,13 @@ L'application @inspagram est un point de départ pour explorer davantage l'utili
 - **Affichage d'utilisateurs :** Intégrez l'API Unsplash Users pour afficher les détails de l'utilisateur associé à chaque image.
 - **Pagination :** Mettez en place une pagination pour afficher plus d'images à la fois.
 
-## Explication du code
-
-Le code source de l'application est bien commenté pour faciliter la compréhension. Voici quelques points clés à noter :
-
-- L'utilisation de React Hooks, notamment `useState` et `useEffect`, pour gérer l'état de l'application.
-- L'intégration de l'API Unsplash en utilisant des requêtes HTTP pour obtenir des images aléatoires.
-- La mise en page réactive grâce à Bootstrap et les classes CSS personnalisées définies dans `PhotoGallery.css`.
-- L'utilisation d'un composant de carrousel pour afficher les images de manière interactive.
-
 ## Contribution
 
 Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration, de nouvelles fonctionnalités ou des correctifs à apporter à ce projet, n'hésitez pas à soumettre des pull requests.
 
 ## Auteur
 
-[Ikrame Saadi](https://github.com/ikramagic/)
+[Ikrame Saadi (@ikramagic)](https://github.com/ikramagic/)
 
 ## Licence
 
