@@ -2,6 +2,8 @@
 
 [@inspagram](https://inspagram.netlify.app/) is a simple web application that mimics the style of Instagram by displaying random images from the Unsplash API. This project was created to explore integrating the Unsplash API with JavaScript and React.
 
+![Website previex](image.png)
+
 ## Features
 
 - **Random Image Display:** The application fetches random images from the Unsplash API and displays them in a grid format, similar to Instagram.
