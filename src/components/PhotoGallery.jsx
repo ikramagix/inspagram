@@ -11,7 +11,7 @@ const PhotoGallery = () => {
   }, []);
 
   const loadPhotos = () => {
-    unsplash.photos.list({ page: 1, perPage: 15 }) 
+    unsplash.photos.list({ page: 1, perPage: 6 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -27,7 +27,7 @@ const PhotoGallery = () => {
   
   const loadRandomPhotos = () => {
     const page = Math.floor(Math.random() * 10) + 1; 
-    unsplash.photos.list({ page, perPage: 5 }) 
+    unsplash.photos.list({ page, perPage: 6 }) 
       .then(result => {
         if (result.errors) {
           console.log('error occurred: ', result.errors[0]);
@@ -38,7 +38,6 @@ const PhotoGallery = () => {
   };  
 
   return (
-    <div className="container">
       <div className="photo-grid">
         {photos.map((photo) => (
           <div key={photo.id} className="photo-card">
@@ -58,7 +57,6 @@ const PhotoGallery = () => {
             </div>
           </div>
         ))}
-      </div>
 
       {/* Reload button */}
       <div className="text-center mt-4">

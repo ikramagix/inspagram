@@ -1,12 +1,14 @@
 /* PhotoGallery.css */
 .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-    justify-items: center;
-    align-items: center;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes d'égale largeur */
+  gap: 16px;
+  justify-content: center; /* Centre la grille horizontalement */
+  align-items: center; /* Centre la grille verticalement */
+  margin: auto; /* Ajoutez du margin auto pour centrer la grille si nécessaire */
+  max-width: 660px; /* Limitez la largeur maximale de la grille */
+}
+
   .photo-card {
     position: relative;
     background-color: #fff;
