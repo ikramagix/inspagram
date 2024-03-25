@@ -1,6 +1,6 @@
-# 🇬🇧 @inspagram - Using the Unsplash API with JavaScript & React 🔬
+# @inspagram : Using the Unsplash API with JavaScript & React 🔬
 
-[@inspagram](https://inspagram.netlify.app/) is a simple web application that mimics the style of Instagram by displaying random images from the Unsplash API. This project was created to explore integrating the Unsplash API with JavaScript and React, and it can serve as a foundation for developing more advanced features.
+[@inspagram](https://inspagram.netlify.app/) is a simple web application that mimics the style of Instagram by displaying random images from the Unsplash API. This project was created to explore integrating the Unsplash API with JavaScript and React.
 
 ## Features
 
@@ -59,7 +59,7 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/inspagram/deploys)
 
-# 🇫🇷 @inspagram - Utiliser l'API Unsplash avec JavaScript & React 🔬
+# (🇫🇷) @inspagram - Utiliser l'API Unsplash avec JavaScript & React 🔬
 
 [@inspagram](https://inspagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
