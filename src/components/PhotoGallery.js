@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import unsplash from '../api/unsplash';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 import './../components/PhotoGallery.css'; 
 
 const PhotoGallery = () => {
