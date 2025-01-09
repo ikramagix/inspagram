@@ -77,7 +77,10 @@ const PhotoGallery = () => {
 
       {/* Reload button centered below the grid */}
       <div className="reload-button-container text-center mt-4">
-        <button className="btn btn-primary btn-lg" onClick={loadRandomPhotos}>
+        <button
+          className="btn reload-button"
+          onClick={loadRandomPhotos}
+        >
           magic... ? <i className="fa-solid fa-wand-magic-sparkles"></i>
         </button>
       </div>

@@ -1,9 +1,34 @@
 /* PhotoGallery.css */
 
-/* Center the reload button below the grid */
+/* Reload button container */
 .reload-button-container {
   text-align: center;
   margin: 40px auto 20px; /* Adds spacing above and below */
+}
+
+/* Reload button customization */
+.reload-button {
+  border: 2px solid #000; /* Black border */
+  color: #000; /* Black text color */
+  background-color: transparent; /* Transparent background */
+  font-size: 1.2rem; /* Slightly larger font size */
+  padding: 10px 20px;
+  border-radius: 8px; /* Rounded corners for aesthetics */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover effect: vibrant gradient background */
+.reload-button:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: #fff; /* White text on gradient */
+  border-color: transparent; /* Seamless gradient with no border */
+}
+
+/* Active state for button */
+.reload-button:active {
+  transform: scale(0.95); /* Slight button press effect */
 }
 
 /* Grid layout for photos */
