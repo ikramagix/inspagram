@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import unsplash from '../api/unsplash';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './../components/PhotoGallery.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './../components/PhotoGallery.css';
 
 const PhotoGallery = () => {
   const [photos, setPhotos] = useState([]);
@@ -13,7 +13,7 @@ const PhotoGallery = () => {
 
   const loadRandomPhotos = () => {
     setError(null); // Clear previous errors
-    unsplash.photos.getRandom({ count: 6 }) // Fetch 6 random photos
+    unsplash.photos.getRandom({ count: 9 }) // Fetch exactly 9 photos
       .then(result => {
         if (result.errors) {
           console.log('Error occurred: ', result.errors[0]);
@@ -49,7 +49,7 @@ const PhotoGallery = () => {
           <div className="photo-details">
             <div className="photo-title">{photo.user.name}</div>
             <div className="photo-description">
-              {photo.description || 'No description available.'}
+              {photo.description || 'Pas de description disponible.'}
             </div>
             <div className="photo-buttons">
               <a

@@ -3,13 +3,13 @@
 /* Grid layout for photos */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+  gap: 16px; /* Space between photos */
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-width: 100%; /* Full-width with max width */
-  padding: 0 16px; /* Add padding for small screens */
+  max-width: 960px; /* Constrain total grid width */
+  padding: 0 16px;
 }
 
 /* Individual photo cards */
@@ -59,6 +59,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  padding: 10px;
   text-align: center;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
@@ -68,7 +69,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 
 .photo-card:hover .photo-details {
@@ -105,8 +105,8 @@
 /* Small screens (up to 576px) */
 @media (max-width: 576px) {
   .photo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller columns */
-    gap: 8px; /* Reduced gap */
+    grid-template-columns: repeat(1, 1fr); /* One column */
+    gap: 12px; /* Smaller gap */
   }
 
   .photo-title {
@@ -129,8 +129,8 @@
 /* Medium screens (up to 768px) */
 @media (max-width: 768px) {
   .photo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust columns */
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 16px;
   }
 
   .photo-title {
