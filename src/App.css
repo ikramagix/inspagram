@@ -9,8 +9,11 @@
 
 /* Header Section */
 .App-header {
-  padding: 20px 0; /* Ensure spacing */
-  background-color: #f8f9fa; /* Light gray matching Bootstrap's bg-light */
+  padding: 20px 0;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background-size: 200% 200%; /* Ensures a smooth gradient transition */
+  animation: gradient-animation 5s ease infinite; /* Optional animation */
+  color: white; /* Ensure text is visible */
   border-bottom: 2px solid #ddd; /* Subtle border for separation */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
