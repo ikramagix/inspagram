@@ -19,7 +19,7 @@
 
 ## Project Setup
 
-1. **Project Cloning:** Clone this repository to your local machine using the command `git clone https://github.com/ikramagic/inspagram.git`.
+1. **Project Cloning:** Clone this repository to your local machine using the command `git clone https://github.com/ikramagix/inspagram.git`.
 
 2. **Dependency Installation:** Install the dependencies using `npm install`.
 
@@ -49,7 +49,7 @@ Contributions are welcome! If you have ideas for improvements, new features, or 
 
 ## Who did this ?
 
-[Ikrame Saadi](https://github.com/ikramagic/)
+[Ikrame Saadi](https://github.com/ikramagix/)
 
 ## License
 
@@ -80,7 +80,7 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Configuration du projet
 
-1. **Clonage du projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagic/inspagram.git`.
+1. **Clonage du projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagix/inspagram.git`.
 
 2. **Installation des dépendances :** Installez les dépendances en utilisant `npm install`.
 
@@ -110,7 +110,7 @@ Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration,
 
 ## Auteur
 
-[Ikrame Saadi (@ikramagic)](https://github.com/ikramagic/)
+[Ikrame Saadi (@ikramagix)](https://github.com/ikramagix/)
 
 ## Licence
 
