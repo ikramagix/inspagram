@@ -1,17 +1,23 @@
 // src/App.js
 import React from "react";
 import PhotoGallery from "./components/PhotoGallery";
-import "./components/PhotoGallery.css";
-import "buffer";
+import "./components/PhotoGallery.css"; 
+import "./App.css"; 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1 style={{ fontFamily: "'Sixtyfour', sans-serif" }} className="fluorescent-text">inspagram | Unsplash API Random Image Generator</h1>
-      <h2 style={{ fontFamily: "'Madimi One', sans-serif" }} className="fluorescent-text">random is beautiful | discover artists | explore your imagination | find inspiration</h2>
-      <PhotoGallery />
+      <header className="App-header">
+        <h1 className="main-heading">inspagram | Unsplash API Random Image Generator</h1>
+        <h2 className="sub-heading">
+          random is beautiful | discover artists | explore your imagination | find inspiration
+        </h2>
+      </header>
+      <main>
+        <PhotoGallery />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
