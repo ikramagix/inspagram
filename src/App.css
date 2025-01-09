@@ -1,33 +1,53 @@
 /* src/App.css */
+
+/* General App Styles */
 .App {
-    text-align: center;
-    margin: auto;
-    font-family: Arial, sans-serif; /* Fallback font */
-  }
-  
-  .App-header {
-    padding: 20px 0;
-    background-color: #f5f5f5;
-    border-bottom: 2px solid #ddd;
-  }
-  
-  .main-heading {
-    font-family: 'Sixtyfour', sans-serif; /* Font already imported in index.html */
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-  }
-  
-  .sub-heading {
-    font-family: 'Madimi One', sans-serif; /* Font already imported in index.html */
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #555;
-    margin-top: 10px;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
+  text-align: center;
+  margin: auto;
+  font-family: Arial, sans-serif; /* Fallback font */
+}
+
+/* Header Section */
+.App-header {
+  padding: 20px 0; /* Ensure spacing */
+  background-color: #f8f9fa; /* Light gray matching Bootstrap's bg-light */
+  border-bottom: 2px solid #ddd; /* Subtle border for separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Main Heading */
+.main-heading {
+  font-family: 'Sixtyfour', sans-serif; /* Use custom font for branding */
+  font-size: 2.5rem; /* Large and bold for emphasis */
+  font-weight: bold;
+  color: #007bff; /* Primary color for visual appeal */
+  margin-bottom: 1rem; /* Add spacing below */
+}
+
+/* Sub Heading */
+.sub-heading {
+  font-family: 'Madimi One', sans-serif; /* Secondary custom font */
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6c757d; /* Bootstrap muted text color */
+  font-style: italic; /* Adds a touch of elegance */
+  margin-bottom: 1rem;
+}
+
+/* Smaller Text */
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #343a40; /* Darker gray for contrast */
+}
+
+/* Body Background */
+body {
+  background-color: #f9f9f9; /* Light background for entire app */
+  color: #333; /* Neutral text color for consistency */
+}
+
+/* Main Section */
+main {
+  padding: 40px 20px; /* More spacing for better layout */
+}
