@@ -1,97 +1,150 @@
 /* PhotoGallery.css */
+
+/* Grid layout for photos */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
   gap: 16px;
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-width: 660px; 
+  max-width: 100%; /* Full-width with max width */
+  padding: 0 16px; /* Add padding for small screens */
 }
 
-  .photo-card {
-    position: relative;
-    background-color: #fff;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    overflow: hidden;
-    cursor: pointer;
+/* Individual photo cards */
+.photo-card {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.photo-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Overlay effect on hover */
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.photo-card:hover .photo-overlay {
+  opacity: 1;
+}
+
+/* Photo details section */
+.photo-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.photo-card:hover .photo-details {
+  transform: translateY(0);
+}
+
+.photo-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.photo-description {
+  font-size: 14px;
+}
+
+.photo-buttons {
+  margin-top: 8px;
+}
+
+.photo-button {
+  font-size: 14px;
+  margin-right: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.photo-button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+
+/* Small screens (up to 576px) */
+@media (max-width: 576px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller columns */
+    gap: 8px; /* Reduced gap */
   }
-  
-  .photo-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .photo-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .photo-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.7) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  
-  .photo-card:hover .photo-overlay {
-    opacity: 1;
-  }
-  
-  .photo-details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    transform: translateY(100%); 
-    transition: transform 0.2s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px; 
-  }
-  
-  .photo-card:hover .photo-details {
-    transform: translateY(0); 
-  }
-  
+
   .photo-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 14px; /* Smaller text */
   }
-  
+
   .photo-description {
-    font-size: 14px;
+    font-size: 12px;
   }
-  
+
   .photo-buttons {
-    margin-top: 8px;
+    margin-top: 4px;
   }
-  
+
   .photo-button {
-    font-size: 14px;
-    margin-right: 8px;
-    color: #fff;
-    text-decoration: none;
+    font-size: 12px;
   }
-  
-  .photo-button:hover {
-    text-decoration: underline;
+}
+
+/* Medium screens (up to 768px) */
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust columns */
+    gap: 12px;
   }
-  
-  /* PhotoGallery.css */
+
+  .photo-title {
+    font-size: 15px;
+  }
+
+  .photo-description {
+    font-size: 13px;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1200px) {
+  .photo-grid {
+    max-width: 960px; /* Limit max width on large screens */
+  }
+}
