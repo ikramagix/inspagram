@@ -29,7 +29,7 @@ const PhotoGallery = () => {
   };
 
   return (
-    <div className="photo-grid">
+    <div className="photo-gallery">
       {/* Display error message if any */}
       {error && (
         <div className="alert alert-danger text-center" role="alert">
@@ -37,45 +37,47 @@ const PhotoGallery = () => {
         </div>
       )}
 
-      {/* Render photo cards */}
-      {photos.map((photo) => (
-        <div key={photo.id} className="photo-card">
-          <img
-            src={photo.urls.small}
-            alt={photo.alt_description || 'Photo from Unsplash'}
-            className="photo-image"
-          />
-          <div className="photo-overlay"></div>
-          <div className="photo-details">
-            <div className="photo-title">{photo.user.name}</div>
-            <div className="photo-description">
-              {photo.description || 'Pas de description disponible.'}
-            </div>
-            <div className="photo-buttons">
-              <a
-                href={photo.user.links.html}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="photo-button"
-              >
-                le_photographe.unsplash? 👨🏻‍✈️
-              </a>
-              <a
-                href={photo.links.html}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="photo-button"
-              >
-                l'image_sur_unsplash.com? 🚁
-              </a>
+      {/* Image grid */}
+      <div className="photo-grid">
+        {photos.map((photo) => (
+          <div key={photo.id} className="photo-card">
+            <img
+              src={photo.urls.small}
+              alt={photo.alt_description || 'Une photo offerte par Unsplash'}
+              className="photo-image"
+            />
+            <div className="photo-overlay"></div>
+            <div className="photo-details">
+              <div className="photo-title">{photo.user.name}</div>
+              <div className="photo-description">
+                {photo.description || 'Pas de description disponible.'}
+              </div>
+              <div className="photo-buttons">
+                <a
+                  href={photo.user.links.html}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="photo-button"
+                >
+                  le_photographe.unsplash? 👨🏻‍✈️
+                </a>
+                <a
+                  href={photo.links.html}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="photo-button"
+                >
+                  l'image_sur_unsplash.com? 🚁
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
-      {/* Reload button */}
-      <div className="text-center mt-4">
-        <button className="btn" onClick={loadRandomPhotos}>
+      {/* Reload button centered below the grid */}
+      <div className="reload-button-container text-center mt-4">
+        <button className="btn btn-primary btn-lg" onClick={loadRandomPhotos}>
           magic... ? <i className="fa-solid fa-wand-magic-sparkles"></i>
         </button>
       </div>

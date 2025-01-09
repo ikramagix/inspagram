@@ -38,15 +38,6 @@
   margin-bottom: 1rem;
 }
 
-/* Smaller Text */
-h3 {
-  font-family: 'Madimi One', sans-serif; /* Secondary custom font */
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin-top: 1rem;
-  color: #6c757d; /* Bootstrap muted text color */
-}
-
 /* Body Background */
 body {
   background-color: #f9f9f9; /* Light background for entire app */

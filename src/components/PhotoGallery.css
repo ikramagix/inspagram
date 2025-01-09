@@ -1,5 +1,11 @@
 /* PhotoGallery.css */
 
+/* Center the reload button below the grid */
+.reload-button-container {
+  text-align: center;
+  margin: 40px auto 20px; /* Adds spacing above and below */
+}
+
 /* Grid layout for photos */
 .photo-grid {
   display: grid;
