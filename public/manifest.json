@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Inspagram",
+  "name": "Inspagram | Unsplash Random Image Generator",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#333333",
+  "background_color": "#f5f5f5",
+  "description": "Get inspired with random images from Unsplash, explore creativity, and discover artists."
 }
