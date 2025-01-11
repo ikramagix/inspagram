@@ -1,38 +1,50 @@
+/* src/App.css */
+
+/* General App Styles */
 .App {
   text-align: center;
+  margin: auto;
+  font-family: Arial, sans-serif; /* Fallback font */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header Section */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 0; /* Ensure spacing */
+  background-color: #f8f9fa; /* Light gray matching Bootstrap's bg-light */
 }
 
-.App-link {
-  color: #61dafb;
+/* Main Heading */
+.main-heading {
+  font-family: 'Sixtyfour', sans-serif; /* Use custom font for branding */
+  font-size: 2.5rem; /* Large and bold for emphasis */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Add spacing below */
+
+  /* Gradient text styles */
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* Vendor-prefixed for WebKit browsers */
+  -moz-background-clip: text; /* Vendor-prefixed for Firefox (older versions) */
+  color: transparent; /* Ensures the gradient fills the text */
+  -webkit-text-fill-color: transparent; /* WebKit-specific text transparency */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sub Heading */
+.sub-heading {
+  font-family: 'Madimi One', sans-serif; /* Secondary custom font */
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6c757d; /* Bootstrap muted text color */
+  margin-bottom: 1rem;
+}
+
+/* Body Background */
+body {
+  background-color: #f9f9f9; /* Light background for entire app */
+  color: #333; /* Neutral text color for consistency */
+}
+
+/* Main Section */
+main {
+  padding: 40px 20px; /* More spacing for better layout */
 }

@@ -1,17 +1,29 @@
 // src/App.js
-import React from 'react';
-import PhotoGallery from './components/PhotoGallery';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import PhotoGallery from "./components/PhotoGallery";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css"; 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>@ⵉⴽⵙⵜⴰⴳⵔⴰⵎ</h1>
-      <blockquote>ⵜⴰⵢⵔⵉ magic! </blockquote>
-      <PhotoGallery />
+      <header className="App-header bg-light text-center py-5">
+        <div className="container">
+          <h1 className="main-heading display-4 fw-bold text-primary mb-3">
+            inspagram
+          </h1>
+          <p className="sub-heading lead text-muted">
+            because random is beautiful | discover artists | unleash your imagination | find inspiration
+          </p>
+        </div>
+      </header>
+      <main className="py-5">
+        <div className="container">
+          <PhotoGallery />
+        </div>
+      </main>
     </div>
   );
-}
+};
 
 export default App;
-

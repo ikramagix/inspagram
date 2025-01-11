@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# @inspagram : Using the Unsplash API with JavaScript & React 🔬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[@inspagram](https://inspagram.netlify.app/) is a simple web application that mimics the style of Instagram by displaying random images from the Unsplash API. This project was created to explore integrating the Unsplash API with JavaScript and React.
 
-## Available Scripts
+[![Website preview](./public/inspagram.png)](https://inspagram.netlify.app/)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Random Image Display:** The application fetches random images from the Unsplash API and displays them in a grid format, similar to Instagram.
+- **Image Reload:** Users can reload images at any time by clicking on the **"magic?"** button.
+- **Responsive Layout:** The layout is responsive and automatically adjusts to the user's screen size thanks to Bootstrap.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **`src/App.js`:** This is the main component of the application where everything starts. It displays the title, username, and the `PhotoGallery` component.
+- **`src/components/PhotoGallery.jsx`:** This is the heart of the application. It uses the Unsplash API to load and display random images in a grid.
+- **`src/api/unsplash.js`:** A utility file that contains the Unsplash API configuration and functions for making requests.
+- **`src/PhotoGallery.css`:** The custom CSS file that defines the style of the photo gallery.
 
-### `npm test`
+## Project Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Project Cloning:** Clone this repository to your local machine using the command `git clone https://github.com/ikramagix/inspagram.git`.
 
-### `npm run build`
+2. **Dependency Installation:** Install the dependencies using `npm install`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Obtaining the Unsplash API Key:** To use the Unsplash API, you must create a developer account on [Unsplash Developer](https://unsplash.com/developers) and obtain an API key.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **API Key Configuration:** Create a `.env` file at the root of the project and add your API key as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+REACT_APP_UNSPLASH_API_KEY=YOUR_UNSPLASH_API_KEY_HERE
+```
 
-### `npm run eject`
+5. **Starting the Application:** Start the application with `npm start`. You can now view the application in your browser by opening [your local server](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can also check out the app online here: [🌍](https://inspagram.netlify.app/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Customization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The @inspagram application is a starting point for further exploring the use of the Unsplash API and React. Here are some ideas to enrich the application:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Image Search:** Add a search function to allow users to search for specific images by keywords.
+- **Displaying Users:** Integrate the Unsplash Users API to display details of the user associated with each image.
+- **Pagination:** Implement pagination to display more images at once.
 
-## Learn More
+## Contribution
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! If you have ideas for improvements, new features, or fixes to this project, feel free to submit pull requests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Who did this ?
 
-### Code Splitting
+[Ikrame Saadi](https://github.com/ikramagix/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE.md).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Status
 
-### Making a Progressive Web App
+![@inspagram Logo](./public/favicon.ico) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/inspagram/deploys)
 
-### Advanced Configuration
+# (🇫🇷) @inspagram - Utiliser l'API Unsplash avec JavaScript & React 🔬
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[@inspagram](https://inspagram.netlify.app/) est une application web simple qui imite le style d'Instagram en affichant des images aléatoires de l'API Unsplash. Ce projet a été créé pour explorer l'intégration de l'API Unsplash avec JavaScript et React, et il peut être utilisé comme base pour développer des fonctionnalités plus avancées.
 
-### Deployment
+## Fonctionnalités
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Affichage d'images aléatoires :** L'application récupère des images aléatoires à partir de l'API Unsplash et les affiche sous forme de grille, similaire à Instagram.
+- **Rechargement d'images :** Les utilisateurs peuvent recharger les images à tout moment en cliquant sur le bouton "magic?".
+- **Mise en page responsive :** La mise en page est responsive et s'adapte automatiquement à la taille de l'écran de l'utilisateur grâce à Bootstrap.
 
-### `npm run build` fails to minify
+## Structure du projet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **`src/App.js` :** C'est le composant principal de l'application où tout commence. Il affiche le titre, le nom d'utilisateur et le composant `PhotoGallery`.
+- **`src/components/PhotoGallery.jsx` :** C'est le cœur de l'application. Il utilise l'API Unsplash pour charger et afficher les images aléatoires dans une grille.
+- **`src/api/unsplash.js` :** Un fichier utilitaire qui contient la configuration de l'API Unsplash et des fonctions pour effectuer des requêtes.
+- **`src/PhotoGallery.css` :** Le fichier CSS personnalisé qui définit le style de la galerie de photos.
+
+## Configuration du projet
+
+1. **Clonage du projet :** Clonez ce dépôt sur votre machine locale en utilisant la commande `git clone https://github.com/ikramagix/inspagram.git`.
+
+2. **Installation des dépendances :** Installez les dépendances en utilisant `npm install`.
+
+3. **Obtention de la clé API Unsplash :** Pour utiliser l'API Unsplash, vous devez créer un compte développeur sur [Unsplash Developer](https://unsplash.com/developers) et obtenir une clé API.
+
+4. **Configuration de la clé API :** Créez un fichier `.env` à la racine du projet et ajoutez votre clé d'API comme suit :
+
+```bash
+REACT_APP_UNSPLASH_API_KEY=VOTRE_CLÉ_API_UNSPLASH_ICI
+```
+
+5. **Démarrage de l'application :** Démarrez l'application avec `npm start`. Vous pouvez maintenant visualiser l'application dans votre navigateur en ouvrant [votre serveur local](http://localhost:3000).
+
+Vous pouvez aussi consulter l'app en lgne ici : [🌍](https://inspagram.netlify.app/).
+
+## Personnalisation
+
+L'application @inspagram est un point de départ pour explorer davantage l'utilisation de l'API Unsplash et de React. Voici quelques idées pour enrichir l'application :
+
+- **Recherche d'images :** Ajoutez une fonction de recherche pour permettre aux utilisateurs de rechercher des images spécifiques par mots-clés.
+- **Affichage d'utilisateurs :** Intégrez l'API Unsplash Users pour afficher les détails de l'utilisateur associé à chaque image.
+- **Pagination :** Mettez en place une pagination pour afficher plus d'images à la fois.
+
+## Contribution
+
+Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration, de nouvelles fonctionnalités ou des correctifs à apporter à ce projet, n'hésitez pas à soumettre des pull requests.
+
+## Auteur
+
+[Ikrame Saadi (@ikramagix)](https://github.com/ikramagix/)
+
+## Licence
+
+Ce projet est sous licence [MIT](LICENSE.md).
+
+## Statut 
+
+![@inspagram Logo](./public/favicon.ico) 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3b62129-a91d-44b6-86a2-6347cc46768b/deploy-status)](https://app.netlify.com/sites/inspagram/deploys)
