@@ -7,7 +7,7 @@
 ## Features
 
 - **Random Image Display:** The application fetches random images from the Unsplash API and displays them in a grid format, similar to Instagram.
-- **Image Reload:** Users can reload images at any time by clicking on the "magic?" button.
+- **Image Reload:** Users can reload images at any time by clicking on the **"magic?"** button.
 - **Responsive Layout:** The layout is responsive and automatically adjusts to the user's screen size thanks to Bootstrap.
 
 ## Project Structure
